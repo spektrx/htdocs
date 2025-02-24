@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/aside.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/aside.css">
     <title>Document</title>
 </head>
 <?php
@@ -17,10 +17,22 @@ $user = findUserByID($_id);
 ?>
 
 <body>
+    <div class="block-burgers">
+        <div class="burger">
+            <span></span>
+        </div>
+        <div class="burger burger-right">
+            <span></span>
+        </div>
+    </div>
+    
+
+    
+
     <section class="aside">
 
         <div href="#" class="aside__logo">
-            <a href="#"><img src="/static/img/Logo.svg" alt="logo"></a>
+            <a href="#"><img src="static/img/Logo.svg" alt="logo"></a>
         </div>
 
         <div class="nav-settings">
@@ -29,42 +41,42 @@ $user = findUserByID($_id);
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/home.svg">
+                        <img src="static/img/home.svg">
                         <span>home</span>
                     </div>
                 </a>
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/anal.svg">
+                        <img src="static/img/anal.svg">
                         <span>analytics</span>
                     </div>
                 </a>
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/wallet.svg">
+                        <img src="static/img/wallet.svg">
                         <span>Wallets</span>
                     </div>
                 </a>
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/inv.svg">
+                        <img src="static/img/inv.svg">
                         <span>Invoices</span>
                     </div>
                 </a>
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/acc.svg">
+                        <img src="static/img/acc.svg">
                         <span>Account</span>
                     </div>
                 </a>
 
                 <a href="#" class="link-wrapper">
                     <div class="link">
-                        <img src="/static/img/set.svg">
+                        <img src="static/img/set.svg">
                         <span>Settings</span>
                     </div>
                 </a>
@@ -75,7 +87,7 @@ $user = findUserByID($_id);
 
             <div class="settings">
                 <div class="settings-link">
-                    <img src="/static/img/11.svg">
+                    <img src="static/img/11.svg">
                     <span>Get help</span>
                 </div>
 
@@ -112,21 +124,21 @@ $user = findUserByID($_id);
                             <div class="credit-limit">
                                 <div class="balance-wrapper">
                                     <div class="b-text">Total Balance</div>
-                                    <img src="/static/img/Rectangle 5689.svg" alt="" class="b-line">
+                                    <img src="static/img/Rectangle 5689.svg" alt="" class="b-line">
                                 </div>
                                 <div class="balance">$<?= $user["balance"] ?></div>
                             </div>
                             <div class="credit-limit">
                                 <div class="balance-wrapper">
                                     <div class="b-text">Total Balance</div>
-                                    <img src="/static/img/Rectangle 5689.svg" alt="" class="b-line">
+                                    <img src="static/img/Rectangle 5689.svg" alt="" class="b-line">
                                 </div>
                                 <div class="balance-2">$<?= $user["balance"] ?></div>
                             </div>
                         </div>
                         <a href="" class="button">Make a payment</a>
                     </div>
-                    <img src="/static/img/Graphic.svg" class="graphic">
+                    <img src="static/img/Graphic.svg" class="graphic">
                 </div>
         </section>
 
@@ -140,9 +152,9 @@ $user = findUserByID($_id);
                         <a href="" class="categories_upcoming">Upcoming</a>
                     </div>
                     <a href="" class="filter-button">
-                        <img src="/static/img/Frame.svg" alt="celendar" class="calendar">
+                        <img src="static/img/Frame.svg" alt="celendar" class="calendar">
                         <div class="month">May</div>
-                        <img src="/static/img/Vector.svg" alt="arrow" class="calendar-arrow">
+                        <img src="static/img/Vector.svg" alt="arrow" class="calendar-arrow">
                     </a>
                 </div>
                 <div class="story">
@@ -159,7 +171,7 @@ $user = findUserByID($_id);
                         <div class="transaction-place">
                             <div class="left">
                                 <div class="left-left">
-                                    <img src="/static/img/icon-service.svg" alt="place">
+                                    <img src="static/img/icon-service.svg" alt="place">
                                     <div class="place-info">
                                         <div class="info-place">
                                             <?= htmlspecialchars($transaction["receiver_name"] ?? "Unknown") ?>
@@ -170,12 +182,12 @@ $user = findUserByID($_id);
                                     </div>
                                 </div>
                                 <div class="place-category">
-                                    <img src="/static/img/Ellipse 859.svg" alt="cate">
+                                    <img src="static/img/Ellipse 859.svg" alt="cate">
                                     <div class="category"><?= htmlspecialchars($category) ?></div>
                                 </div>
                             </div>
                             <div class="right">
-                                <img src="/static/img/<?= $isSender ? 'Group.svg' : 'up.svg' ?>" alt="zigzag">
+                                <img src="static/img/<?= $isSender ? 'Group.svg' : 'up.svg' ?>" alt="zigzag">
                                 <div class="right-right">
                                     <div class="summ"><?= $amount ?></div>
                                     <a href="" class="see">See invoice</a>
@@ -195,7 +207,7 @@ $user = findUserByID($_id);
                 <div class="money-graphic"></div>
             </section> -->
 
-            <img src="/static/img/Account summary.svg" alt="" class="account-summary">
+            <img src="static/img/Account summary.svg" alt="" class="account-summary">
 
         </section>
 
@@ -208,14 +220,14 @@ $user = findUserByID($_id);
             <div class="menu-header">
                 <input type="search" placeholder="Search" class="search-input">
                 <div class="profile">
-                    <img src="/static/img/notification.svg" class="profile__img-1">
-                    <img src="/static/img/perfil.svg" class="profile__img-2">
+                    <img src="static/img/notification.svg" class="profile__img-1">
+                    <img src="static/img/perfil.svg" class="profile__img-2">
                 </div>
             </div>
         </div>
         <div class="menu-wallet">
             <div class="wallet-header">Wallet</div>
-            <img src="/static/img/Classic.svg" alt="card">
+            <img src="static/img/Classic.svg" alt="card">
         </div>
 
         <div class="menu_quick-transfer">
@@ -224,7 +236,7 @@ $user = findUserByID($_id);
             <form class="quick-transfer-form" action="/send.php" method="POST">
                 <div class="search-block">
                     <input class="form-phone-number" type="text" placeholder="Account number" name="ReceiverId">
-                    <img src="/static/img/button.svg" class="send-button">
+                    <img src="static/img/button.svg" class="send-button">
                 </div>
 
                 <select class="form-card-selector">
@@ -248,19 +260,19 @@ $user = findUserByID($_id);
         <div class="menu_quick-buttons">
             <div class="quick-buttons-send">
                 <div class="quick-buttons-block">
-                    <img src="/static/img/more.svg">
+                    <img src="static/img/more.svg">
                     <a href="" class="quick-buttons-send-button">Send</a>
                 </div>
                 <div class="quick-buttons-block">
-                    <img src="/static/img/more.svg">
+                    <img src="static/img/more.svg">
                     <a href="" class="quick-buttons-receive-button">Receive</a>
                 </div>
                 <div class="quick-buttons-block">
-                    <img src="/static/img/more.svg">
+                    <img src="static/img/more.svg">
                     <a href="" class="quick-buttons-invoicing-button">Invoicing</a>
                 </div>
                 <div class="quick-buttons-block">
-                    <img src="/static/img/more.svg">
+                    <img src="static/img/more.svg">
                     <a href="" class="quick-buttons-more-button">More</a>
                 </div>
 
@@ -268,7 +280,7 @@ $user = findUserByID($_id);
         </div>
         <div class="menu-contacts">
             <div class="contacts-header">Contacts</div>
-            <img src="/static/img/Contacts.svg">
+            <img src="static/img/Contacts.svg">
         </div>
     </section>
 
@@ -308,5 +320,7 @@ $user = findUserByID($_id);
 
 
 </script>
+
+<script src="static/js/burger.js"></script>
 
 </html>
