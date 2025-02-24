@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #050624;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+*:focus {
+    outline: none;
+}
+
+.center-block {
+    padding-top: 56px;
+}
+
+/* Overview */
+
+.money-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.overview-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.money-container {
+    display: flex;
+    gap: 32px;
+}
+
+.money-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.balance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.credit-limit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #4a49497a;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 40px;
+}
+
+.balance-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.b-text {
+    font-size: 12px;
+}
+
+.b-line {
+    width: 16px;
+    height: 2px;
+}
+
+.balance {
+    font-size: 32px;
+    font-weight: 800;
+    width: 156px;
+}
+
+.balance-2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    font-size: 12px;
+    color: white;
+    background: rgb(73, 73, 248);
+    border-radius: 10px;
+}
+
+.center-bottom {
+    display: flex;
+    gap: 32px;
+    padding-top: 48px;
+}
+
+.Transactions {
+    width: 100%;
+}
+
+.tr-text {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 800;
+}
+
+.categories_all {
+    font-size: 12px;
+}
+
+.categories_upcoming {
+    font-size: 12px;
+    color: #A4B4CB;
+}
+
+.selected {
+    color: #3D7AE5;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 16px;
+}
+
+.date {
+    padding-bottom: 12px;
+}
+
+.toogle_tab {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.filter-button {
+    width: 58px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #01B8E3;
+    border-radius: 8px;
+    justify-content: space-evenly;
+
+}
+
+.calendar {
+    width: 12px;
+    height: 12p;
+}
+
+.calendar-arrow {
+    width: 5px;
+    height: 3px;
+}
+
+.month{
+    font-size:8px;
+}
+
+
+.story {
+
+}
+
+.place-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-size: 10px;
+    font-weight: 600;
+    color: #D3E1F5;
+}
+
+.summ {
+    font-size: 12px;
+}
+
+.category {
+    font-size: 8px;
+}
+
+.info-place {
+    font-size: 10px;
+}
+
+.place-date {
+    font-size: 8px;
+    color: #5B5B5B;
+}
+
+.transaction-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left {    
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+
+.left-left {
+    display: flex;
+    gap: 14px;
+    width: 130px;
+}
+
+.right {
+    display: flex;
+    gap: 32px;
+}
+
+.right-right {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    width: 140px;
+    justify-content: flex-end;
+}
+
+.place-category {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 4px;
+    background: #FDBCFF;
+    border-radius: 3px;
+}
+
+.see {
+    height: 20px;
+    background: #01B8E3;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+}
+/* Overview */
+
+
+/* wallet */
+
+.account-menu {
+    background-color: rgba(61, 122, 229, 10%);
+    width: 317px;
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.menu-header {
+    display: flex;
+    gap: 6px;
+}
+
+.profile__img-1 {
+    width: 18px;
+    height: 18px;
+}
+
+.profile__img-2 {
+    width: 24px;
+    height: 24px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-input {
+    border: solid #4B6EAC 1px;
+    border-radius: 8px;
+    width: 187px;
+    height: 26px;
+    padding: 5px 8px 4px 28px;
+    background: url(/static/img/icon.svg) no-repeat;
+    background-position: 5% 50%;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.search-input::placeholder {
+    color: #D3E1F5;
+}
+
+.wallet-header {
+    padding: 22px 0px 16px 3px;
+}
+
+.search-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-card-selector{
+    font-size: 10px;
+}
+
+.form-phone-number{
+    width: 187px;
+    height: 26px;
+    border-radius: 8px;
+    border: solid #4B6EAC 1px;
+    background-color: rgba(255, 255, 255, 0.22);
+    padding: 5px 8px 4px 8px;
+    font-size: 10px;
+}
+
+.form-phone-number::placeholder {
+    color: #D3E1F5;
+}
+
+.menu_quick-transfer {
+    padding-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.quick-transfer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(211, 225, 245, 0.15);
+    border-radius: 10px;
+    padding: 23px 16px 12px 16px;
+}
+
+.form-card-selector {
+    width: 221px;
+    height: 26px;
+    background: transparent;
+    border: solid #D3E1F5 1px;
+    color: #FFF;
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.form-amount{
+    background: rgba(250, 251, 252, 0.23);
+    border: 1px solid #D3E1F5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px 8px 12px;
+}
+
+.form-amount-header{
+    font-size: 10px;
+    color: #A4B4CB;
+}
+
+.form-amount-holder{
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.send-button {
+    width: 26px;
+    height: 26px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.save-button {
+    background: #FAFBFC;
+    color: #3D7AE5;
+    border: none;
+    border-radius: 8px;
+    font-size: 8px;
+    width: 50%;
+    height: 26px;
+}
+
+.send-money-button {
+    background: linear-gradient(111deg, rgba(62, 121, 229, 1) 0%, rgba(1, 184, 227, 1) 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 8px;
+    width: 50%;
+    height: 26px;
+}
+
+.quick-buttons-send {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 32px;
+}
+
+.quick-buttons-send a {
+    color: #798BA3;
+    font-size: 10px;
+}
+
+.quick-buttons-send img {
+    width: 48px;
+}
+
+.quick-buttons-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-contacts {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        gap: 20px;
+    }
+    .graphic {
+        width: 70vw;
+    }
+}

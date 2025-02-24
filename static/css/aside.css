@@ -1,0 +1,146 @@
+
+
+.aside{
+    /* position: absolute;
+    top:0; */
+    background-color: #3d7be51d;
+    width: 258px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #3E79E5;
+}
+
+.aside__logo{
+    padding-top: 48px;
+
+}
+
+.nav-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+
+.nav{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+    gap: 32px;
+    padding-top: 64px;
+
+}
+
+.settings{
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.settings .link{
+    
+}
+
+
+
+.switch {
+    font-size: 14px; 
+    position: relative;
+    display: inline-block;
+    width: 2.5em; 
+    height: 1.5em; 
+  }
+ 
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1em; 
+    width: 1em; 
+    border-radius: 50%;
+    left: 0.25em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: .4s;
+  }
+  
+
+  input:checked + .slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1em); 
+    background-color: #fff;
+  }
+
+
+  .switch-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+
+
+
+.link-wrapper {
+    display: block; 
+    text-decoration: none; 
+    color: inherit;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
+}
+
+
+.link-wrapper:hover {
+    background-color: rgba(128, 128, 128, 0.386);
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    padding-right: 54px;
+}
+
+
+.link img {
+    margin-right: 10px; 
+}
+
+
+.link span {
+    font-size: 16px; 
+}
